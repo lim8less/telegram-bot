@@ -41,11 +41,11 @@ class Bot:
             elif forcast_id < 900:
                 emoji = "🌤️"
             if time_now.hour == datetime_obj.hour+5:
-                return f"वर्तमान समय:- {time_now.hour}:{time_now.minute}:" \
-                       f"{time_now.second}\nतापमान:- {self.weather_data[i]['temp']}°C\nदबाव:- " \
-                       f"{self.weather_data[i]['pressure']} hPa\nनमी:- {self.weather_data[i]['humidity']}" \
-                       f"% 💧\nहवा की गति:- {self.weather_data[i]['wind_speed']}m/s 🍃\nबादल:- " \
-                       f"{self.weather_data[i]['clouds']}% ☁️\nविवरण:- {description}{emoji}"
+                return f"वर्तमान समय :- {time_now.hour}:{time_now.minute}:" \
+                       f"{time_now.second}\nतापमान :- {self.weather_data[i]['temp']}°C\nदबाव :- " \
+                       f"{self.weather_data[i]['pressure']} hPa\nनमी :- {self.weather_data[i]['humidity']}" \
+                       f"% 💧\nहवा की गति :- {self.weather_data[i]['wind_speed']}m/s 🍃\nबादल :- " \
+                       f"{self.weather_data[i]['clouds']}% ☁️\nविवरण :- {description}{emoji}"
         self.weather_data_fn()
         self.hourly_weather()
 
